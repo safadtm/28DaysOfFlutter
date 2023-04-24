@@ -2,7 +2,7 @@
 
 This is my repository for the 28 Days of Flutter challenge, where I'll be learning and practicing Flutter by building a new app every day for 28 days. 
 
-## Day 1: restaurant_picker
+## Day 1: [Restaurant Picker](https://github.com/safadtm/28DaysOfFlutter/tree/master/day01_restaurant_picker)
 
 ### Concepts Learned
 - MaterialApp and Scaffold widgets
