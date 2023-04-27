@@ -12,6 +12,8 @@ This is a simple Flutter app with a text field and a slider. The app allows the 
 
 ## Day 4:[Flashcard App](https://github.com/safadtm/28DaysOfFlutter/tree/master/day04_flashcards) 
 This is a Flutter application that displays flashcards with questions and answers, and allows the user to navigate through them using the "PREV" and "NEXT" buttons.
+## Day 5:[Web View](https://github.com/safadtm/28DaysOfFlutter/tree/master/day05_show_webview)
+This is a simple Flutter application that demonstrates how to use a web view widget to display a webpage inside a Flutter app.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
