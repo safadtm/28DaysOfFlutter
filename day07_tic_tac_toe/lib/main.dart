@@ -14,7 +14,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var _boardState = List.filled(9, TileState.EMPTY);
+  final _boardState = List.filled(9, TileState.EMPTY);
+  var _currentTurn = TileState.CROSS;
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +59,7 @@ class _MyAppState extends State<MyApp> {
                   return BoardTile(
                     tileState: tileState,
                     tileDimension: tileDimension,
-                    onPressed: () => print("tapped $tileIndex"),
+                    onPressed: () => _updateTileStateForIndex(tileIndex),
                   );
                 }).toList(),
               );
@@ -67,5 +68,57 @@ class _MyAppState extends State<MyApp> {
         );
       },
     );
+  }
+
+  void _updateTileStateForIndex(int selectedIndex) {
+    if (_boardState[selectedIndex] == TileState.EMPTY) {
+      setState(() {
+        _boardState[selectedIndex] = _currentTurn;
+        _currentTurn = _currentTurn == TileState.CROSS
+            ? TileState.CIRCLE
+            : TileState.CROSS;
+      });
+
+      final winner = _findWinner();
+      if (winner != null) {
+        print("Winner is :$winner");
+      }
+    }
+  }
+
+  TileState? _findWinner() {
+
+    winnerForMatch(a, b, c) {
+      if (_boardState[a] != TileState.EMPTY) {
+        if ((_boardState[a] == _boardState[b]) &&
+            (_boardState[b] == _boardState[c])) {
+          return _boardState[a];
+        }
+      }
+      return TileState.EMPTY;
+    }
+
+    final checks = [
+      winnerForMatch(0, 1, 2),
+      winnerForMatch(3, 4, 5),
+      winnerForMatch(6, 7, 8),
+      winnerForMatch(0, 3, 6),
+      winnerForMatch(1, 4, 7),
+      winnerForMatch(2, 5, 8),
+      winnerForMatch(0, 4, 8),
+      winnerForMatch(2, 4, 6),
+    ];
+
+    TileState? winner;
+
+    for (int i = 0; i < checks.length; i++) {
+
+      if (checks[i] != null) {
+        winner = checks[i];
+        break;
+      }
+    }
+
+    return winner;
   }
 }
