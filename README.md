@@ -16,6 +16,8 @@ This is a Flutter application that displays flashcards with questions and answer
 This is a simple Flutter application that demonstrates how to use a web view widget to display a webpage inside a Flutter app.
 ## Day 6:[Picture Carousel](https://github.com/safadtm/28DaysOfFlutter/tree/master/day06_picture_carousel)
 This is a Flutter application that creates a picture carousel using the carousel_slider package.
+## Day 7:[Tic Tac Toe](https://github.com/safadtm/28DaysOfFlutter/tree/master/day07_tic_tac_toe)
+
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
