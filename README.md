@@ -19,6 +19,10 @@ This is a Flutter application that creates a picture carousel using the carousel
 ## Day 7:[Tic Tac Toe](https://github.com/safadtm/28DaysOfFlutter/tree/master/day07_tic_tac_toe)
 Tic Tac Toe is a two-player  game played on a 3x3 grid. The players take turns marking their chosen symbol (traditionally X or O) in an empty square of the grid, with the aim of getting three of their symbols in a row, column, or diagonal. The game ends either when a player achieves a winning pattern or when all squares are filled, resulting in a draw. Tic Tac Toe is a simple game that is often used as an educational tool for teaching basic concepts of game theory and artificial intelligence.
 
+## Day 8:[Save data to shared preferences](https://github.com/safadtm/28DaysOfFlutter/tree/master/day08_user_settings)
+This is a Flutter application that allows the user to select their preferred settings and save them to persistent storage using the PreferencesService class. The UI consists of a ListView with various form elements such as text fields, radio buttons, checkboxes, and switches, allowing the user to select their preferred options.
+
+
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
