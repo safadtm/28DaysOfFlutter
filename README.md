@@ -24,6 +24,8 @@ Tic Tac Toe is a two-player  game played on a 3x3 grid. The players take turns m
 This is a Flutter application that allows the user to select their preferred settings and save them to persistent storage using the PreferencesService class. The UI consists of a ListView with various form elements such as text fields, radio buttons, checkboxes, and switches, allowing the user to select their preferred options.
 ## Day 9:[Share Widget Screenshots](https://github.com/safadtm/28DaysOfFlutter/tree/master/day09_share_widget_snapshot)
 This is a simple Flutter application that takes a screenshot of a Card widget and then shares it using the share_plus package.
+## Day 10:[Networking Requests](https://github.com/safadtm/28DaysOfFlutter/tree/master/day10_networking_requests)
+This is a simple Flutter application that makes a network request using the http package and displays the response on the screen.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
