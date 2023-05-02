@@ -26,6 +26,8 @@ This is a Flutter application that allows the user to select their preferred set
 This is a simple Flutter application that takes a screenshot of a Card widget and then shares it using the share_plus package.
 ## Day 10:[Networking Requests](https://github.com/safadtm/28DaysOfFlutter/tree/master/day10_networking_requests)
 This is a simple Flutter application that makes a network request using the http package and displays the response on the screen.
+## Day 11:[Weather App](https://github.com/safadtm/28DaysOfFlutter/tree/master/day11_weather_app)
+This weather app is a simple mobile application developed using the Flutter framework. It allows users to search for weather information about any city in the world. Users can enter the name of the city in a search bar, and the app will display the current temperature, weather description, and an icon representing the current weather condition.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
