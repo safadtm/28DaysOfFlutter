@@ -31,10 +31,10 @@ class _MyAppState extends State<MyApp> {
                   children: [
                     Image.network(_response!.iconUrl),
                     Text(
-                      _response!.tempInfo.temperature.toString(),
+                      _response!.temperatureinfo.temperature.toString(),
                       style: const TextStyle(fontSize: 40),
                     ),
-                    Text(_response!.weatherInfo.description),
+                    Text(_response!.weatherinfo.description),
                   ],
                 ),
               Padding(
@@ -61,9 +61,6 @@ class _MyAppState extends State<MyApp> {
 
   void _search() async {
     final response = await _dataService.getWeather(_cityTextController.text);
-    print(response.cityname);
-    print(response.tempInfo.temperature);
-    print(response.weatherInfo.description);
     setState(() {
       _response = response;
     });
