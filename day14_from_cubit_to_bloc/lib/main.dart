@@ -14,8 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: BlocProvider<PostsCubit>(
-        create: (context) => PostsCubit()..getPosts(),
+      home: BlocProvider<PostsBloc>(
+        create: (context) => PostsBloc()..add(LoadPostsEvent()),
         child: const PostView(),
       ),
     );

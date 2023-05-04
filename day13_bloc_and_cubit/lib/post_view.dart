@@ -20,6 +20,7 @@ class PostView extends StatelessWidget {
             );
           }
           return ListView.builder(
+            itemCount: posts.length,
             itemBuilder: (context, index) {
               return Card(
                 child: ListTile(

@@ -32,6 +32,10 @@ This weather app is a simple mobile application developed using the Flutter fram
 This is a Flutter app that displays two tabs, one with a ListView and one with a GridView, each with 20 items.
 ## Day 13:[Flutter BloC and Cubit](https://github.com/safadtm/28DaysOfFlutter/tree/master/day13_bloc_and_cubit)
 This is a  Flutter application that retrieves a list of posts from a remote API using the BLoC pattern and displays them in a ListView widget.
+
+## Day 14:[Upgrade to Bloc from Cubit](https://github.com/safadtm/28DaysOfFlutter/tree/master/day14_from_cubit_to_bloc)
+This is a  Flutter application that retrieves a list of posts from a remote API using the BLoC pattern and displays them in a ListView widget.
+
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
