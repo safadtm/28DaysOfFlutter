@@ -1,5 +1,6 @@
-import 'package:day13_bloc_and_cubit/post_cubit.dart';
-import 'package:day13_bloc_and_cubit/posts.dart';
+
+import 'package:day14_from_cubit_to_bloc/post_cubit.dart';
+import 'package:day14_from_cubit_to_bloc/posts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
