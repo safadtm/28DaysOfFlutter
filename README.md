@@ -40,6 +40,9 @@ The app is a simple demonstration of navigation in Flutter using the Bloc patter
 
 ## Day 16:[Pokedex](https://github.com/safadtm/28DaysOfFlutter/tree/master/day16_pokedex_app)
 PokeDex app that shows pokemon in a GridView using the BLoC pattern. This app will cover making a networking request, implementing a Bloc, and displaying remote images from an API
+
+## Day 17:[Pokedex 2](https://github.com/safadtm/28DaysOfFlutter/tree/master/day17_pokedex_app_2)
+Build out the navigation for the Pokedex app using the BLoC library. This will cover app navigation, working with multiple blocs, and performing multithreaded networking requests.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
