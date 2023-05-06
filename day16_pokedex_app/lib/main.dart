@@ -20,15 +20,11 @@ class MyApp extends StatelessWidget {
           secondary: Colors.red,
         ),
       ),
-      home: MultiBlocProvider(
-        providers: [
-          BlocProvider(
-            create: (context) =>
-                PokemonBloc()..add(PokemonPageRequest(page: 0)),
-          )
-        ],
-        child: const PokedexView(),
-      ),
+      home: MultiBlocProvider(providers: [
+        BlocProvider(
+          create: (context) => PokemonBloc()..add(PokemonPageRequest(page: 0)),
+        )
+      ], child: const PokedexView()),
     );
   }
 }

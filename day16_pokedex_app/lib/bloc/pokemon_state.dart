@@ -7,19 +7,18 @@ class PokemonInitial extends PokemonState {}
 
 class PokemonLoadingProgress extends PokemonState {}
 
-class PokemonPageLoadSucces extends PokemonState {
+class PokemonPageLoadSuccess extends PokemonState {
   final List<PokemonListing> pokemonListing;
   final bool canLoadNextPage;
 
-  PokemonPageLoadSucces({
+  PokemonPageLoadSuccess({
     required this.pokemonListing,
     required this.canLoadNextPage,
   });
 }
 
-class PokemonPageLoadFailed extends PokemonState {
+class PokemonPageLoadfailed extends PokemonState {
   final Error error;
 
-  PokemonPageLoadFailed({required this.error});
-
+  PokemonPageLoadfailed({required this.error});
 }

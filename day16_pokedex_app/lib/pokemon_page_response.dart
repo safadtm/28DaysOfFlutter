@@ -1,12 +1,9 @@
 class PokemonListing {
   final int id;
   final String name;
-  
   String get imageUrl =>
       'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$id.png';
-
   PokemonListing({required this.id, required this.name});
-
   factory PokemonListing.fromJson(Map<String, dynamic> json) {
     final name = json["name"];
     final url = json["url"] as String;
@@ -23,7 +20,6 @@ class PokemonPageResponse {
     required this.pokemonListing,
     required this.canLoadNextPage,
   });
-
   factory PokemonPageResponse.fromJson(Map<String, dynamic> json) {
     final canLoadNextPage = json["next"] != null;
     final pokemonListing = (json["results"] as List)

@@ -17,25 +17,25 @@ class PokedexView extends StatelessWidget {
             return const Center(
               child: CircularProgressIndicator(),
             );
-          } else if (state is PokemonPageLoadSucces) {
-            return GridView.builder(
+          } else if (state is PokemonPageLoadSuccess) {
+            return GridView.builder(itemCount: state.pokemonListing.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3),
-              itemCount: state.pokemonListing.length,
               itemBuilder: (context, index) {
                 return Card(
                   child: GridTile(
-                    child: Column(
-                      children: [
-                        Image.network(state.pokemonListing[index].imageUrl),
-                        Text(state.pokemonListing[index].name)
-                      ],
-                    ),
-                  ),
+                      child: Column(
+                    children: [
+                      Image.network(state.pokemonListing[index].imageUrl),
+                      Text(
+                        state.pokemonListing[index].name,
+                      ),
+                    ],
+                  )),
                 );
               },
             );
-          } else if (state is PokemonPageLoadFailed) {
+          } else if (state is PokemonPageLoadfailed) {
             return Center(
               child: Text(state.error.toString()),
             );
