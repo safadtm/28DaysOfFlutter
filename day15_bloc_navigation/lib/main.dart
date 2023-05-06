@@ -17,14 +17,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MultiBlocProvider(
         providers: [
-          BlocProvider(
-            create: (context) => NavCubit(),
-          ),
+          BlocProvider(create: (context) =>NavCubit() ,),
           BlocProvider(
             create: (context) => PostsBloc()..add(LoadPostsEvent()),
           ),
         ],
-        child:const AppNavigator(),
+        child: const AppNavigator(),
       ),
     );
   }

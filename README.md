@@ -37,6 +37,9 @@ This is a  Flutter application that retrieves a list of posts from a remote API 
 This is a  Flutter application that retrieves a list of posts from a remote API using the BLoC pattern and displays them in a ListView widget.
 ## Day 15:[BLoC Navigation ](https://github.com/safadtm/28DaysOfFlutter/tree/master/day15_bloc_navigation)
 The app is a simple demonstration of navigation in Flutter using the Bloc pattern. It consists of two screens: the first screen shows a list of posts fetched from an API using a PostsBloc and rendered using a ListView.builder. The second screen shows the details of a post that the user selects from the first screen.
+
+## Day 16:[Pokedex](https://github.com/safadtm/28DaysOfFlutter/tree/master/day16_pokedex_app)
+PokeDex app that shows pokemon in a GridView using the BLoC pattern. This app will cover making a networking request, implementing a Bloc, and displaying remote images from an API
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
