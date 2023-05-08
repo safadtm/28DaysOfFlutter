@@ -45,6 +45,8 @@ PokeDex app that shows pokemon in a GridView using the BLoC pattern. This app wi
 Build out the navigation for the Pokedex app using the BLoC library. This will cover app navigation, working with multiple blocs, and performing multithreaded networking requests.
 ## Day 18:[Todo App](https://github.com/safadtm/28DaysOfFlutter/tree/master/day18_todo_app)
 Todo app with Flutter using AWS Amplify and the BLoC pattern. This will cover how to build out the model schema using the Amplify Admin UI, setting up a cubit for state management, and persisting todos to the device.
+## Day 19:[Todo App - sharing data between apps](https://github.com/safadtm/28DaysOfFlutter/tree/master/day19_sharing_data_between_apps)
+To perform cross platform data sync by using the cloud (AWS Amplify) in your Flutter app. This will cover how to add the API category to Amplify app, syncing the local DataStore database with the DynamoDB backend, and displaying the realtime updates in the todo app.
 
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
