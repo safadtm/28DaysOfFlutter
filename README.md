@@ -48,6 +48,12 @@ Todo app with Flutter using AWS Amplify and the BLoC pattern. This will cover ho
 ## Day 19:[Todo App - sharing data between apps](https://github.com/safadtm/28DaysOfFlutter/tree/master/day19_sharing_data_between_apps)
 To perform cross platform data sync by using the cloud (AWS Amplify) in your Flutter app. This will cover how to add the API category to Amplify app, syncing the local DataStore database with the DynamoDB backend, and displaying the realtime updates in the todo app.
 
+## Day 20:[Todo App - Hosted User Authentication Using AWS Amplify](https://github.com/safadtm/28DaysOfFlutter/tree/master/day20_easy_user_authentication)
+Updating the Auth category to support web sign in, authentication state management, and updating the Todo model schema for supporting user specific queries.
+
+## Day 21:[Login UI using BLoC](https://github.com/safadtm/28DaysOfFlutter/tree/master/day21_login_ui_bloc)
+Login UI develop and validation with forms and managing state with BLoC.
+
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
