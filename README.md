@@ -54,6 +54,8 @@ Updating the Auth category to support web sign in, authentication state manageme
 ## Day 21:[Login UI using BLoC](https://github.com/safadtm/28DaysOfFlutter/tree/master/day21_login_ui_bloc)
 Login UI develop and validation with forms and managing state with BLoC.
 
+## Day 22:[Sign up UI using BLoC](https://github.com/safadtm/28DaysOfFlutter/tree/master/day22_auth_flow)
+Creatied the sign up and confirmation screens, managing state between blocs and cubits, and communicating with multiple navigators.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
