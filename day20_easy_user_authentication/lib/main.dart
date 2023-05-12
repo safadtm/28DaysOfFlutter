@@ -2,14 +2,14 @@ import 'package:amplify_api/amplify_api.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_datastore/amplify_datastore.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:day18_todo_app/amplifyconfiguration.dart';
 import 'package:day18_todo_app/auth_cubit.dart';
 import 'package:day18_todo_app/loading_view.dart';
 import 'package:day18_todo_app/models/ModelProvider.dart';
-import 'package:day18_todo_app/todo_cubit.dart';
 import 'package:day18_todo_app/todos_view.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const MyApp());

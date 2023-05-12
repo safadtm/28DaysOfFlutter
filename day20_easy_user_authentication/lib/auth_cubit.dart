@@ -9,7 +9,7 @@ class AuthCubit extends Cubit<AuthState> {
   void signIn() async {
     try {
       final userId = await authRepo.webSignIn();
-      if (userId != null && userId.isNotEmpty) {
+      if (userId.isNotEmpty) {
         emit(AuthenticatedState(userId: userId));
       } else {
         emit(UnauthenticatedState());
@@ -33,7 +33,7 @@ class AuthCubit extends Cubit<AuthState> {
   void attemptAutoSignIn() async {
     try {
       final userId = await authRepo.attemptAutoSignIn();
-      if (userId != null && userId.isNotEmpty) {
+      if (userId.isNotEmpty) {
         emit(AuthenticatedState(userId: userId));
       } else {
         emit(UnauthenticatedState());
