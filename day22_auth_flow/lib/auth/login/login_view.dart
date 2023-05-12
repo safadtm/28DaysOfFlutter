@@ -104,13 +104,16 @@ class LoginView extends StatelessWidget {
                   if (_formKey.currentState!.validate()) {
                     context.read<LoginBloc>().add(LoginSubmitted());
                   }
-                  print("tapped in");
+                  print("tap in login button");
+
+                  print(state.formStatus.toString());
                 },
                 child: const Text("Login"),
               );
       },
     );
   }
+
   Widget _showSignUpButton(BuildContext context) {
     return SafeArea(
       child: TextButton(
@@ -119,6 +122,7 @@ class LoginView extends StatelessWidget {
       ),
     );
   }
+
   void _showSnackBar(BuildContext context, String message) {
     final snackBar = SnackBar(content: Text(message));
     ScaffoldMessenger.of(context).showSnackBar(snackBar);

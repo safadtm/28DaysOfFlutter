@@ -10,7 +10,7 @@ import 'package:day21_login_ui_bloc/auth/sign_up/signup_state.dart';
 
 class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
   final AuthRepository authRepository;
-    final AuthCubit authCubit;
+  final AuthCubit authCubit;
 
   SignUpBloc({
     required this.authRepository,
@@ -32,7 +32,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
       emit(state.copyWith(password: event.password));
     }
     //form submitted
-    else if (event is LoginSubmitted) {
+    else if (event is SignUpSubmitted) {
       emit(state.copyWith(formStatus: FormSubmitting()));
       try {
         await authRepository.signUp(
@@ -41,6 +41,11 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
           password: state.password,
         );
         emit(state.copyWith(formStatus: SubmissionSuccess()));
+        authCubit.showConfirmSignUp(
+          username: state.username,
+          email: state.email,
+          password: state.password,
+        );
       } on Exception catch (e) {
         emit(state.copyWith(formStatus: SubmissionFailed(exception: e)));
       }

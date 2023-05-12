@@ -28,10 +28,21 @@ class ConfirmationBloc extends Bloc<ConfirmationEvent, ConfirmationState> {
     else if (event is ConfirmationSubmitted) {
       emit(state.copyWith(formStatus: FormSubmitting()));
       try {
-        await authRepository.confirmSignUp(
+        final userId = await authRepository.confirmSignUp(
           username: "",
           confirmationCode: state.code,
         );
+        print(userId);
+
+        emit(state.copyWith(formStatus: SubmissionSuccess()));
+
+        final credentials = authCubit.credentials;
+
+        credentials!.userId = userId;
+
+        print(credentials);
+        
+        authCubit.launchSession(credentials);
       } on Exception catch (e) {
         emit(state.copyWith(formStatus: SubmissionFailed(exception: e)));
       }

@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:day21_login_ui_bloc/auth/auth_credentials.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:day21_login_ui_bloc/auth/auth_cubit.dart';
@@ -29,9 +30,16 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     else if (event is LoginSubmitted) {
       emit(state.copyWith(formStatus: FormSubmitting()));
       try {
-        await authRepository.login(
+        final userId = await authRepository.login(
           username: state.username,
           password: state.password,
+        );
+        emit(state.copyWith(formStatus: SubmissionSuccess()));
+        authCubit.launchSession(
+          AuthCredentials(
+            username: state.username,
+            userId: userId,
+          ),
         );
       } on Exception catch (e) {
         emit(state.copyWith(formStatus: SubmissionFailed(exception: e)));

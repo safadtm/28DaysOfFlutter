@@ -76,10 +76,10 @@ class SignUpView extends StatelessWidget {
     return BlocBuilder<SignUpBloc, SignUpState>(builder: (context, state) {
       return TextFormField(
         decoration: const InputDecoration(
-          icon: Icon(Icons.person),
+          icon: Icon(Icons.email),
           hintText: 'Email',
         ),
-        validator: (value) => state.isValidUsername ? null : 'Invalid email',
+        validator: (value) => state.isValidEmail ? null : 'Invalid email',
         onChanged: (value) => context.read<SignUpBloc>().add(
               SignUpEmailChanged(email: value),
             ),
@@ -113,6 +113,9 @@ class SignUpView extends StatelessWidget {
                 if (_formKey.currentState!.validate()) {
                   context.read<SignUpBloc>().add(SignUpSubmitted());
                 }
+                print("tap in sign up button");
+                
+                print(state.formStatus.toString());
               },
               child: const Text('Sign Up'),
             );
