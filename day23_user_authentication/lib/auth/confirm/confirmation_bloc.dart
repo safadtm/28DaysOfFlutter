@@ -34,6 +34,7 @@ class ConfirmationBloc extends Bloc<ConfirmationEvent, ConfirmationState> {
         );
 
         emit(state.copyWith(formStatus: SubmissionSuccess()));
+        print("Submission succes case :- ${state.formStatus}");
 
         final credentials = authCubit.credentials;
         final userId = await authRepository.login(
@@ -45,6 +46,8 @@ class ConfirmationBloc extends Bloc<ConfirmationEvent, ConfirmationState> {
         authCubit.launchSession(credentials);
       } on Exception catch (e) {
         emit(state.copyWith(formStatus: SubmissionFailed(exception: e)));
+        print("Confirmation Bloc $e");
+          print("Submission fail case :- ${state.formStatus}");
       }
     }
   }

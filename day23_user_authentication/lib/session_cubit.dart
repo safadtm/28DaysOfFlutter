@@ -21,7 +21,10 @@ class SessionCubit extends Cubit<SessionState> {
   void attemptAutoLogin() async {
     try {
       final userId = await authRepo.attemptAutoLogin();
-      User? user = await dataRepo.getUserByid(userId!);
+      if (userId == null) {
+        throw Exception('User not logged in');
+      }
+      User? user = await dataRepo.getUserByid(userId);
       user ??= await dataRepo.createUser(
         userId: userId,
         username: "User-${UUID()}",
@@ -35,6 +38,7 @@ class SessionCubit extends Cubit<SessionState> {
   void showAuth() => emit(Unauthenticated());
   void showSession(AuthCredentials credentials) async {
     try {
+      
       User? user = await dataRepo.getUserByid(credentials.userId!);
       user ??= await dataRepo.createUser(
           userId: credentials.userId!,
@@ -42,8 +46,8 @@ class SessionCubit extends Cubit<SessionState> {
           email: credentials.email);
 
       emit(Authenticated(user: user));
-    } catch (e) {
-      rethrow;
+    } on Exception {
+      emit(Unauthenticated());
     }
   }
 

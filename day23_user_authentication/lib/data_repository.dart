@@ -15,7 +15,7 @@ class DataRepository {
   Future<User> createUser(
       {required String userId,
       required String username,
-       String? email}) async {
+        String? email}) async {
     final newUser = User(
       id: userId,
       username: username,

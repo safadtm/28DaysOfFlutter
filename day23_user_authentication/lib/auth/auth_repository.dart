@@ -1,17 +1,29 @@
-import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:amplify_flutter/amplify_flutter.dart';
 
 class AuthRepository {
-  Future<String> _getUserIdFromAttributes() async {
+  Future<String?> _getUserIdFromAttributes() async {
     try {
+      final session = await Amplify.Auth.fetchAuthSession();
+      if (!session.isSignedIn) {
+        return null;
+      }
       final attributes = await Amplify.Auth.fetchUserAttributes();
+      print(attributes);
+      if (attributes.isEmpty) {
+        return null;
+      }
       final userId = attributes
-          .firstWhere((element) => element.userAttributeKey.toString() == "sub")
+          .firstWhere(
+            (element) => element.userAttributeKey == "sub",
+            // orElse: () => "",
+          )
           .value;
+      print(userId);
       return userId;
-    } catch (e) {
-      rethrow;
+    } on Exception catch (e) {
+      print(e.toString());
     }
+    return null;
   }
 
   Future<String?> attemptAutoLogin() async {
@@ -44,8 +56,8 @@ class AuthRepository {
     required String email,
     required String password,
   }) async {
-    final options =
-        SignUpOptions(userAttributes: {AuthUserAttributeKey.email: email.trim()});
+    final options = SignUpOptions(
+        userAttributes: {AuthUserAttributeKey.email: email.trim()});
     try {
       final result = await Amplify.Auth.signUp(
         username: username.trim(),

@@ -7,7 +7,6 @@ import 'package:day21_login_ui_bloc/auth/form_submission_status.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-
 class ConfirmationView extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
 
@@ -53,8 +52,9 @@ class ConfirmationView extends StatelessWidget {
     return BlocBuilder<ConfirmationBloc, ConfirmationState>(
         builder: (context, state) {
       return TextFormField(
+        keyboardType: TextInputType.number,
         decoration: const InputDecoration(
-          icon: Icon(Icons.person),
+          icon: Icon(Icons.ad_units_outlined),
           hintText: 'Confirmation Code',
         ),
         validator: (value) =>

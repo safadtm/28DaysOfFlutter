@@ -4,7 +4,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:day21_login_ui_bloc/auth/auth_cubit.dart';
 import 'package:day21_login_ui_bloc/auth/auth_repository.dart';
 import 'package:day21_login_ui_bloc/auth/form_submission_status.dart';
-import 'package:day21_login_ui_bloc/auth/login/login_event.dart';
 import 'package:day21_login_ui_bloc/auth/sign_up/signup_event.dart';
 import 'package:day21_login_ui_bloc/auth/sign_up/signup_state.dart';
 
