@@ -58,6 +58,8 @@ Login UI develop and validation with forms and managing state with BLoC.
 Creatied the sign up and confirmation screens, managing state between blocs and cubits, and communicating with multiple navigators.
 ## Day 23:[User Authentication](https://github.com/safadtm/28DaysOfFlutter/tree/master/day23_user_authentication)
 Amplify project with Admin UI, adding functionality to auth capabilities like sign up and sign in, and saving the registered user to DataStore as the database.
+## Day 24:[Dice App](https://github.com/safadtm/28DaysOfFlutter/tree/master/day24_dicee_app)
+The Dice App is a simple and intuitive mobile application that emulates the experience of rolling dice. It provides users with a convenient way to simulate random dice rolls for various tabletop games, educational purposes, or any situation where a virtual dice is needed.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
