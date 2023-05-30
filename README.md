@@ -63,6 +63,10 @@ The Dice App is a simple and intuitive mobile application that emulates the expe
 
 ## Day 25:[Xylophone](https://github.com/safadtm/28DaysOfFlutter/tree/master/day25_xylophone)
 A simple xylophone app for Android and iOS.
+## Day 26:[Video Trimmer](https://github.com/safadtm/28DaysOfFlutter/tree/master/day26_video_trimmer)
+This is a simple Flutter app that allows you to trim videos. It provides a user-friendly interface to select a video file and trim it to the desired duration.
+
+
 
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
