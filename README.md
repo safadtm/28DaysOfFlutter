@@ -69,7 +69,9 @@ This is a simple Flutter app that allows you to trim videos. It provides a user-
 This is a Flutter app that allows users to create and participate in polls. It provides a user-friendly interface for creating polls, voting on polls, and viewing poll results.
 
 
-
+## Day 28:[Date Picker](https://github.com/safadtm/28DaysOfFlutter/tree/master/day28_calender_picker)
+This Flutter application demonstrates a calendar picker using the `provider` package for state management.
+The app allows users to select a date from the calendar picker and displays the selected date below.
 ## Acknowledgments
 I would like to express my sincere thanks and appreciation to [Kilo Loco](https://www.youtube.com/channel/UCv75sKQFFIenWHrprnrR9aA) for providing me with helpful resources and tutorials that have been instrumental in my learning and development of Flutter.
 His dedication and commitment to creating high-quality content have helped me to understand complex concepts and build robust applications.
